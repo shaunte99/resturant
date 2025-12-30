@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #1c1c1c;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(197,157,95,0.08), transparent 40%),
+    radial-gradient(circle at 80% 10%, rgba(255,255,255,0.03), transparent 35%),
+    radial-gradient(circle at 50% 90%, rgba(197,157,95,0.06), transparent 45%);
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Luxury Grain */
+.luxury-grain {
+  position: fixed;
+  inset: 0;
+  background-image: url("../images/grain.png");
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(28,28,28,0.95);
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 40px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #c59d5f;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #c59d5f;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: url("../images/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background:
+    radial-gradient(circle at top, rgba(197,157,95,0.25), transparent 60%),
+    linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+  padding: 60px;
+  border-radius: 25px;
+  backdrop-filter: blur(6px);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  color: #c59d5f;
+}
+
+.hero-buttons button {
+  margin: 15px;
+  padding: 14px 34px;
+  background: #c59d5f;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Sections */
+.section {
+  padding: 90px 25px;
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.03),
+    rgba(255,255,255,0.01)
+  );
+  border-radius: 30px;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.05),
+    0 40px 80px rgba(0,0,0,0.6);
+}
+
+.section h2 {
+  text-align: center;
+  color: #c59d5f;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+/* Divider */
+.luxury-divider {
+  height: 1px;
+  width: 60%;
+  margin: 80px auto;
+  background: linear-gradient(90deg, transparent, #c59d5f, transparent);
+}
+
+/* Cards */
+.featured-dishes,
+.events-container,
+.engagement-feed,
+.food-fame-feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+}
+
+.dish-card,
+.event-card,
+.post {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.dish-card:hover,
+.event-card:hover,
+.post:hover {
+  transform: translateY(-8px);
+}
+
+/* Booking */
+#bookingForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+#bookingForm textarea,
+#bookingForm button {
+  grid-column: 1 / -1;
+}
+
+#bookingForm button {
+  background: #c59d5f;
+  border: none;
+  padding: 14px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 50px 20px;
+  background: #111;
+}
+
+
+/* IMAGE CONTROL */
+.media {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ABOUT IMAGES */
+.image-frame {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.65), rgba(0,0,0,0.35)),
+    url("../images/HERO.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BUTTONS */
+.btn-primary,
+.btn-secondary {
+  padding: 14px 34px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.btn-primary {
+  background: #c59d5f;
+  border: none;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #c59d5f;
+  color: #ffff;
+}
+
+/* Hover */
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(197,157,95,0.35);
+}
+
+/* Active Press */
+.btn-primary:active,
+.btn-secondary:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}

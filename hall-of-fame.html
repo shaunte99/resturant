@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signs Social</title>
+  <link rel="stylesheet" href="styles/hall-of-fame.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="social-header">
+  <div>
+    <h1>Signs Social</h1>
+    <span class="subtitle">Moments shared by our guests</span>
+  </div>
+  <button class="new-post-btn">Create Moment</button>
+</header>
+
+<!-- CREATE POST MODAL -->
+<div class="modal" id="postModal">
+  <div class="modal-content">
+    <h2>Create Your Moment</h2>
+    <input type="text" placeholder="Your name">
+    <input type="file">
+    <textarea placeholder="Describe your experience..."></textarea>
+    <button class="btn-primary">Post</button>
+  </div>
+</div>
+
+<section class="feed">
+
+  <article class="post">
+    <div class="post-top">
+      <img src="images/avaters/p1.webp">
+      <div>
+        <span class="username">@sandtonelite</span>
+        <span class="location">Signs Restaurant</span>
+      </div>
+    </div>
+
+    <div class="post-image">
+      <img src="images/dude1.webp">
+    </div>
+
+    <div class="post-actions">
+      <button class="like-btn">❤</button>
+      <span class="likes">231 likes</span>
+    </div>
+
+    <p class="caption">
+      Every bite felt intentional. The ambience, the plating, the energy — perfection.
+    </p>
+  </article>
+
+  <article class="post">
+    <div class="post-top">
+      <img src="images/avaters/p2.jpg">
+      <div>
+        <span class="username">@luxuryplates</span>
+        <span class="location">Signs Restaurant</span>
+      </div>
+    </div>
+
+    <div class="post-image">
+      <img src="images/lady1.jpg">
+    </div>
+
+    <div class="post-actions">
+      <button class="like-btn">❤</button>
+      <span class="likes">142 likes</span>
+    </div>
+
+    <p class="caption">
+      Food that belongs in an art gallery. Easily top tier dining in Sandton.
+    </p>
+  </article>
+
+</section>
+
+<script src="scripts/hall-of-fame.js"></script>
+</body>
+</html>
