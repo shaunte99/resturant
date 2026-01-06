@@ -126,3 +126,36 @@ body {
   font-size: 1rem;
 }
 
+/* =========================
+   MOBILE MENU NAV UPGRADE
+   ========================= */
+@media (max-width: 768px) {
+
+  .menu-nav {
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 20px 16px 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .menu-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menu-nav button {
+    flex: 0 0 auto;
+    padding: 10px 22px;
+    font-size: 0.9rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.04);
+  }
+
+  .menu-nav button.active {
+    background: var(--gold);
+    color: #000;
+  }
+}
+
