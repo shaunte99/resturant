@@ -296,4 +296,31 @@ footer {
   }
 }
 
+/* =========================
+   MOBILE BOOKING FIX
+   ========================= */
+@media (max-width: 768px) {
+
+  #bookingForm {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  #bookingForm input,
+  #bookingForm select,
+  #bookingForm textarea,
+  #bookingForm button {
+    width: 100%;
+  }
+
+  #bookingForm textarea {
+    min-height: 120px;
+  }
+
+  #bookingForm button {
+    padding: 16px;
+    font-size: 1rem;
+  }
+}
+
 
