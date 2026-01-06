@@ -252,3 +252,122 @@ footer {
   transform: translateY(0);
   box-shadow: 0 6px 15px rgba(0,0,0,0.5);
 }
+
+/* =========================
+   MOBILE OPTIMIZATION ONLY
+   ========================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 14px 20px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 0 12px;
+  }
+
+  /* HERO */
+  .hero {
+    height: 85vh;
+    padding: 20px;
+  }
+
+  .hero-overlay {
+    padding: 35px 20px;
+    border-radius: 18px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    line-height: 1.25;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 25px;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 60px 18px;
+    margin-bottom: 50px;
+    border-radius: 22px;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  /* DIVIDER */
+  .luxury-divider {
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  /* GRIDS */
+  .featured-dishes,
+  .events-container,
+  .engagement-feed,
+  .food-fame-feed {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* CARDS */
+  .dish-card,
+  .event-card,
+  .post {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  /* IMAGES */
+  .media,
+  .image-frame {
+    border-radius: 14px;
+  }
+
+  /* BUTTONS */
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 1rem;
+  }
+
+  /* BOOKING FORM */
+  #bookingForm {
+    grid-template-columns: 1fr;
+  }
+
+  #bookingForm textarea {
+    min-height: 120px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 35px 18px;
+    font-size: 0.9rem;
+  }
+}
+
