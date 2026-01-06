@@ -253,10 +253,48 @@ footer {
 }
 
 /* =========================
-   MOBILE BOOKING FIX ONLY
+   /* =========================
+   FINAL MOBILE LOCK
    ========================= */
 @media (max-width: 768px) {
 
+  /* NAVBAR */
+  .navbar {
+    padding: 14px 20px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+    padding: 10px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 18px;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(6px);
+  }
+
+  /* BOOKINGS */
   #bookingForm {
     display: flex;
     flex-direction: column;
@@ -284,6 +322,4 @@ footer {
     font-size: 1rem;
   }
 }
-
-
 
