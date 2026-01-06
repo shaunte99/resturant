@@ -127,15 +127,25 @@ body {
 }
 
 /* =========================
-   MOBILE MENU NAV UPGRADE
+   PREMIUM MOBILE MENU NAV
    ========================= */
 @media (max-width: 768px) {
 
   .menu-nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
     justify-content: flex-start;
-    gap: 12px;
-    padding: 20px 16px 10px;
+    gap: 22px;
+    padding: 18px 18px 12px;
     overflow-x: auto;
+    background: linear-gradient(
+      180deg,
+      rgba(5,5,5,0.95),
+      rgba(5,5,5,0.75)
+    );
+    backdrop-filter: blur(14px);
     scrollbar-width: none;
   }
 
@@ -143,19 +153,37 @@ body {
     display: none;
   }
 
+  /* BUTTONS BECOME TABS */
   .menu-nav button {
-    flex: 0 0 auto;
-    padding: 10px 22px;
-    font-size: 0.9rem;
-    border-radius: 999px;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.65);
+    position: relative;
     white-space: nowrap;
-    backdrop-filter: blur(8px);
-    background: rgba(255,255,255,0.04);
   }
 
+  /* ACTIVE TAB */
   .menu-nav button.active {
-    background: var(--gold);
-    color: #000;
+    color: var(--gold);
+  }
+
+  /* UNDERLINE INDICATOR */
+  .menu-nav button.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--gold),
+      transparent
+    );
   }
 }
-
